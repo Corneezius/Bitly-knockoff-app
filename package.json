@@ -12,12 +12,5 @@
     "meteor-node-stubs": "^0.4.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
-  },
-  "meteor": {
-    "mainModule": {
-      "client": "client/main.js",
-      "server": "server/main.js"
-    },
-    "testModule": "tests/main.js"
   }
 }
