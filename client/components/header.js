@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = () =>
+const Header = () => {
   return (
     <nav className="nav navbar-default">
       <div className="navbar-header">
