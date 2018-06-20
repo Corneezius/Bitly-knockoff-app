@@ -1,6 +1,6 @@
 import { Mongo } from "meteor/mongo";
 
-Meteor.method({
+Meteor.methods({
   "links.insert": function(url) {
     console.log("attempting to save", url);
   }
