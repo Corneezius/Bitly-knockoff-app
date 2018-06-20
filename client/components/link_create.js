@@ -19,6 +19,7 @@ class LinkCreate extends Component {
       }
       else {
         this.setState({error:""});
+        this.refs.link.value = "";
       }
       console.log(error);
     });
