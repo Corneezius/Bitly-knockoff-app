@@ -12,10 +12,16 @@ Meteor.startup(() => {
 
 // execute when user visits with a route like localhose:3000/abcd
 function onRoute (req, res, next) {
-  // take token and try to find link
-  // if we find link redirect user to URL
-    // if not reutrn to react app
+  // take token and try to find link, if we find link redirect user to URL, if not reutrn to react app
+    const link = Links.findOne({token:req.params.token});
 
+    if (link) {
+      res.writeHead( 307, { "Location": link.url});
+      res.end();
+    }
+    else {
+      next();
+    }
 }
 
 
